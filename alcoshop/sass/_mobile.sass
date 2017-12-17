@@ -1,0 +1,152 @@
+
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+
+.preloader		
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 3000
+	background-color: $bg
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin-left: -40px
+	margin-top: -40px
+	width: 80px
+	&:before, &:after
+		content: ""
+		border: 5px solid $red
+		width: 80px
+		height: 80px
+		border-radius: 500px
+		position: absolute
+	&:before
+		animation: pulse-outer 0.8s ease-in infinite
+	&:after
+		animation: pulse-inner 0.8s linear infinite	
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)		
+
+.side-nav
+	transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	z-index: 1001
+	&.active
+		transform: translateX(0%)
+	.header__middle
+		background-color: $bg
+	.logo	
+		display: none
+	.social .social__text
+		display: none	
+	.header__middle__content
+		flex-wrap: wrap
+	.flex-grid
+		flex-wrap: wrap
+	.main-menu, .social, .info__links
+		flex-wrap: wrap
+	.info__links .info__link
+		width: 100%
+		margin-bottom: 15px	
+	.row .col.xl8
+		width: 100%
+	.phone-block
+		width: 100%
+		margin-bottom: 15px
+	.main-menu .main-menu__item
+		width: 100%
+	.main-menu .main-menu__item:after
+		display: none
+	.main-menu .main-menu__link
+		height: 35px
+	.main-menu .main-menu__item:before
+		bottom: -7px
+	.main-menu .item-add .main-menu__link .fa
+		color: #fff
+		margin-right: 0
+	li.main-menu__item.item-add
+		height: 35px							
+#slide-out	
+	.row .col.xl9
+		width: 100%
+	.row .col.xl3
+		width: 100%
+.side-nav li>a
+	padding: 0
+	height: auto
+
+.logo-mobile
+	text-align: center
+	display: none
+	position: relative
+	.logo
+		width: 250px
+		display: inline-block
+		padding: 20px 0
+		img
+			max-width: 100%
+
+.hamburger
+	width: 40px
+	height: 45px
+	position: fixed
+	cursor: pointer
+	right: 15px
+	top: 20px
+	display: block
+	z-index: 1002
+	&:before
+		content: ""
+		width: 150px
+		height: 150px
+		right: -70px
+		top: -60px
+		position: fixed
+		border-radius: 50%
+		background-color: $bg
+		//z-index: 100
+	span
+		display: block
+		position: absolute
+		height: 4.44px
+		width: 100%
+		background: #fff none repeat scroll 0% 0%
+		opacity: 1
+		right: 0px
+		transition: all 0.25s ease-in-out 0s
+		transform: rotate(0deg)
+		&:nth-child(1)
+			margin-top: 0px
+		&:nth-child(2)
+			margin-top: 16px
+			margin-right: 0px
+		&:nth-child(3)
+			margin-top: 32px
+	&.opened span
+		&:nth-child(1)
+			transform: rotate(135deg)
+			margin-top: 16px
+		&:nth-child(2)
+			opacity: 0
+			right: -75px
+		&:nth-child(3)
+			transform: rotate(-135deg)
+			margin-top: 16px

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Alcoguide</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
+	<meta property="og:url"           content="https://alcoguide.com/" />
+	<meta property="og:type"          content="alcoguide website" />
+	<meta property="og:title"         content="The Future of Sleep Is Near" />
+	<meta property="og:description"   content="Something beautiful is coming. Stay tuned." />
+	<meta property="og:image"         content="https://alcoguide.com/img/share.jpg" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { overflow-x: hidden; } html { background-color: #15222a; }</style>
+
+</head>
+
+<body class="home">
+
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header class="header"> <!-- class="row side-nav" id="slide-out" -->
+		<div class="mobile" id="">
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col xl9">
+							<div class="flex-grid">
+								<ul class="lang">
+									<li><a href=""><img src="img/lang_en.png"></a></li>
+								</ul>
+								<ul class="main-menu">
+									<li class="main-menu__item active"><a href="#" class="main-menu__link">Главная</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Новости</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">О нас</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Вакансии</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Покупателям</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Бизнесу</a></li>
+									<li class="main-menu__item item-add">
+										<a href="#" class="main-menu__link"><i class="fa fa-plus-square" aria-hidden="true"></i>Добавить магазин</a>
+									</li>
+									<li class="main-menu__item item-add">
+										<a href="#" class="main-menu__link"><i class="fa fa-plus-square" aria-hidden="true"></i>Добавить напиток</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col xl3">
+							<div class="social">
+								<div class="social__text">Подпишись</div>
+								<ul class="social__list">
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="container">
+					<div class="row">
+						<div class="col xl4">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="Alcoguide"></a>
+							
+						</div>
+						<div class="col xl8">
+							<div class="header__middle__content">
+								<div class="phone-block">
+									<a href="tel:88002500500" class="phone-block__link">8 800 2500 500</a> <br>
+									<a href="#" class="phone-block__button button">Заказать звонок</a>
+								</div>
+								<div class="info">
+										<div class="info__links">
+											<a href="#" class="info__link button button--dark info__button" id="degustation">
+											<i class="fa fa-glass" aria-hidden="true"></i>Дегустации</a>
+											<a href="#" class="info__link button button--dark info__button" id="action">
+											<i class="fa fa-percent" aria-hidden="true"></i>Акции</a>
+											<a href="#" class="info__link button button--dark info__button" id="shops">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>Москва - <span class="red-color">200 магазинов</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<a href="#" class="user user-login dropdown-button">
+												<div class="user__avatar">
+													<img src="img/user.png" alt="">
+												</div>
+												<span><span id="user-name">Константин</span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+											</a>
+										</div>	
+										<div class="info__text"><span>3 200 магазинов</span>	<span>32 200 напитков</span>	<span>314 200 предложений</span></div>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logo-mobile">
+			<div class="container">
+				<div class="row">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt="Alcoguide"></a>
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="control-panel">
+						<div class="control-panel__catalog" id="catalog">
+							<div class="catalog__button"><i class="fa fa-list-ul" aria-hidden="true"></i> Каталог товаров<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+							<div class="catalog__filter">
+								<div class="choise-product">
+									<select>
+										<option value="" selected>Вино</option>
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+										<option value="3">Option 3</option>
+									</select>
+								</div>
+								<div class="masonry">
+									  <label for="amount">Цена</label>
+										<div id="slider-range"></div>
+									  <div class="input-wrap">
+									  	<input type="text" id="amount">
+									  	<input type="text" id="amount_1">
+									  </div>
+								</div>
+								<div class="masonry">
+									  <label for="amount">Выдержка</label>
+										<div id="slider-range2"></div>
+									  <div class="input-wrap">
+									  	<input type="text" id="amount2">
+									  	<input type="text" id="amount_2">
+									  </div>
+								</div>
+								<form class="catalog__filter-form">
+									<div class="filter-form__color">
+										<div class="filter-form__title">Цвет</div>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Белое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Красное</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Розовое</span>
+										</label>
+									</div>
+									<div class="filter-form__sugar">
+										<div class="filter-form__title">Сахар</div>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Сухое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Полусладкое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Сладкое</span>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+							<form class="control-panel__search" id="search">
+								<span class="placeholder">Поиск товара</span>
+								<input id="search-input" type="search" required>
+								<label class="label-icon" for="search"></label>
+								<div class="file-btn__wrap input-btn">
+									<input id="file" name="file" type="file" value="">
+									<i class="fa fa-picture-o" aria-hidden="true"></i>
+								</div>
+								<i class="fa fa-search" aria-hidden="true"></i>
+								<div class="submit-btn__wrap input-btn">
+									<input id="submit" name="submit" type="submit" value="Найти">
+								</div>
+							</form>
+						<div class="control-panel__interface">
+							<a href="#" class="control-panel__button shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Магазины</a>
+							<a href="#" class="control-panel__button favorites"><i class="fa fa-heart" aria-hidden="true"></i> Избранное</a>
+							<a href="#" class="control-panel__button comparisons"><i class="fa fa-balance-scale" aria-hidden="true"></i>Сравнение</a>
+							<a href="#" class="basket" id="basket">
+								<div class="basket__info">
+									<span class="basket__count">1 товар </span>
+									<span class="basket__price">15 000р.</span>
+								</div>
+								<div class="basket__icon">
+									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Map -->
+	<div class="map" id="js-contacts">
+	  <div id="map" class="contacts-map"></div>
+	</div><!-- /.map -->
+
+	<section class="best-deals">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title"><span>Лучшие</span> предложения для вас!</h2>
+					<a href="#" class="button middle-width">Показать все</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="products-grid">
+					<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product1.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product2.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product3.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product4.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+					</div><!-- // product grid -->
+			</div>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title"><span>Новые</span> напитки</h2>
+				</div>
+			</div>
+			<div class="main">
+				<div class="main__content">
+					<div class="products-grid">
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product1.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product2.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product3.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product4.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product1.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="product hoverable">
+							<div class="product__control">
+								<a href="#" class="product__control__button"><i class="fa fa-heart" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+								<a href="#" class="product__control__button"><i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+							</div>
+							<img src="img/product3.png" alt="product" class="product_img">
+							<div class="product__content">
+								<div class="product__title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="product__brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="product_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="product__statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									<div class="product__about">
+										<a href="#" class="item_about_analog"><span>100</span>магазинов</a>
+									</div>
+									<div class="product__buy">
+										<div class="product__price"><span>от </span>2000р.</div>
+										<a href="#" class="button button--buy"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Купить</a>
+									</div>
+							</div>
+						</div><!-- //product -->
+						<div class="button-wrap">
+							<a href="#" class="button middle-width">Показать еще</a>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div class="base-title base-title-small"><span>Скачайте</span> сейчас!</div>
+					<div class="app">
+						<a href="#" class="app-item"><img src="img/google-play.png" alt=""></a>
+						<a href="#" class="app-item"><img src="img/app-store.png" alt=""></a>
+					</div>
+					<div class="sidebar__item subscription">
+						<form class="sidebar__item__form" id="subscription">
+							<div class="form__title">
+								<span class="span1">Подписывайтесь</span><br><span class="span2"> на новые</span> <span class="span3">напитки</span></div>
+							<div class="form__input">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<input type="text" name="" placeholder="Введите E-mail">
+							</div>
+							<a href="#" class="button middle-width">Подписаться</a>
+						</form>
+					</div>
+					<div class="sidebar__item sell-drink">
+						<form class="sidebar__item__form" id="sell-drink">
+							<div class="form__title">
+								<span class="span1">У вас есть</span> <span class="span2">редкий напиток</span> 
+								<span class="span3">и вы хотите его</span> <span class="span4">выгодно продать?</span></div>
+							<div class="form__input">
+								<i class="fa fa-glass" aria-hidden="true"></i>
+								<input type="email" name="" placeholder="Введите название напитка">
+							</div>
+							<a href="#" class="button middle-width">Добавить</a>
+						</form>
+					</div>
+					<div class="sidebar__item addshop">
+						<form class="sidebar__item__form" id="addshop">
+							<div class="form__title"><span class="span1">Увеличьте выручку!</span>
+							 <span class="span2">Добавьте свой</span><span class="span3"> магазин сейчас!</span></div>
+							<div class="form__input">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								<input type="text" name="" placeholder="Введите название напитка">
+							</div>
+							<a href="#" class="button middle-width">Добавить</a>
+						</form>
+					</div>
+				</div><!-- //sidebar -->
+			</div>
+		</div>
+	</section>
+
+	<section class="new-shop shop">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title"><span>Новые</span> магазины</h2>
+				</div>
+			</div>
+			<div class="shop-grid">
+				<div class="shop__item">
+					<div class="shop__image">
+						<img src="img/shop1.png" alt="">
+					</div>
+					<div class="shop__content">
+						<div class="shop__info">
+							<div class="shop__info__name">Ароматный мир </div>
+							<div class="shop__info__star">
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="shop__address">
+							<div class="shop__address__city">г. Москва</div>
+							<a href="#" class="shop__address__reviews"><span>2</span> отзыва</a>
+						</div>
+						<div class="shop__controls">
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-location-arrow" aria-hidden="true"></i> Как добраться?</a>
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-glass" aria-hidden="true"></i>Ассортимент</a>
+							<a href="#" class="button button--buy button--heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="shop__image">
+						<img src="img/shop2.png" alt="">
+					</div>
+					<div class="shop__content">
+						<div class="shop__info">
+							<div class="shop__info__name">Ароматный мир </div>
+							<div class="shop__info__star">
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="shop__address">
+							<div class="shop__address__city">г. Москва</div>
+							<a href="#" class="shop__address__reviews"><span>2</span> отзыва</a>
+						</div>
+						<div class="shop__controls">
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-location-arrow" aria-hidden="true"></i> Как добраться?</a>
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-glass" aria-hidden="true"></i>Ассортимент</a>
+							<a href="#" class="button button--buy button--heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="shop__image">
+						<img src="img/shop3.png" alt="">
+					</div>
+					<div class="shop__content">
+						<div class="shop__info">
+							<div class="shop__info__name">Ароматный мир </div>
+							<div class="shop__info__star">
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="shop__address">
+							<div class="shop__address__city">г. Москва</div>
+							<a href="#" class="shop__address__reviews"><span>2</span> отзыва</a>
+						</div>
+						<div class="shop__controls">
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-location-arrow" aria-hidden="true"></i> Как добраться?</a>
+							<a href="#" class="button button--buy middle-width"><i class="fa fa-glass" aria-hidden="true"></i>Ассортимент</a>
+							<a href="#" class="button button--buy button--heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="viewed">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title">Просмотренные</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="viewed-grid">
+
+					<a href="#" class="viewed__item">
+						<div class="viewed__img">
+							<img src="img/img.png" alt="img">
+						</div>
+						<div class="viewed__content">
+							<div class="viewed__title">Водка "Абрикон Голд" Абрикосовая 0,7</div>
+							<div class="viewed__info">
+								<div class="viewed__info__star">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="product__price"><span>от </span>2000р.</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="#" class="viewed__item">
+						<div class="viewed__img">
+							<img src="img/img.png" alt="img">
+						</div>
+						<div class="viewed__content">
+							<div class="viewed__title">Водка "Абрикон Голд" Абрикосовая 0,7</div>
+							<div class="viewed__info">
+								<div class="viewed__info__star">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="product__price"><span>от </span>2000р.</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="#" class="viewed__item">
+						<div class="viewed__img">
+							<img src="img/img.png" alt="img">
+						</div>
+						<div class="viewed__content">
+							<div class="viewed__title">Водка "Абрикон Голд" Абрикосовая 0,7</div>
+							<div class="viewed__info">
+								<div class="viewed__info__star">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="product__price"><span>от </span>2000р.</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="#" class="viewed__item">
+						<div class="viewed__img">
+							<img src="img/img.png" alt="img">
+						</div>
+						<div class="viewed__content">
+							<div class="viewed__title">Водка "Абрикон Голд" Абрикосовая 0,7</div>
+							<div class="viewed__info">
+								<div class="viewed__info__star">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="product__price"><span>от </span>2000р.</div>
+							</div>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title">Новости</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col xl8 social-widget">
+					<div class="social-widget__item">
+						<iframe src="//widget.instagramm.ru/?imageW=2&imageH=2&thumbnail_size=137&type=0&typetext=doc._pavlenko_anna_kharkov&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:250px;height:439px;"></iframe>
+					</div>
+					<div class="social-widget__item">
+						<iframe src="//widget.instagramm.ru/?imageW=2&imageH=2&thumbnail_size=137&type=0&typetext=doc._pavlenko_anna_kharkov&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:250px;height:439px;"></iframe>
+					</div>
+					<div class="social-widget__item">
+						<iframe src="//widget.instagramm.ru/?imageW=2&imageH=2&thumbnail_size=137&type=0&typetext=doc._pavlenko_anna_kharkov&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:250px;height:439px;"></iframe>
+					</div>
+				</div>
+				<div class="col xl4">
+					<a href="#" class="news__item hoverable">
+						<div class="news__img">
+							<img src="img/news.png" alt="img">
+						</div>
+						<div class="news__content">
+							<div class="news__title">Добавили новую функциов магазины</div>
+							<div class="news__info">Согласно ФЗ РФ N 171 О госрегулировании алкогольного рынка от 22.11.1995 (ред. от 31.12.2014) продажа алкогольных...</div>
+						</div>
+					</a>
+					<a href="#" class="news__item hoverable">
+						<div class="news__img">
+							<img src="img/news.png" alt="img">
+						</div>
+						<div class="news__content">
+							<div class="news__title">Добавили новую функциов магазины</div>
+							<div class="news__info">Согласно ФЗ РФ N 171 О госрегулировании алкогольного рынка от 22.11.1995 (ред. от 31.12.2014) продажа алкогольных...</div>
+						</div>
+					</a>
+					<a href="#" class="news__item hoverable">
+						<div class="news__img">
+							<img src="img/news.png" alt="img">
+						</div>
+						<div class="news__content">
+							<div class="news__title">Добавили новую функциов магазины</div>
+							<div class="news__info">Согласно ФЗ РФ N 171 О госрегулировании алкогольного рынка от 22.11.1995 (ред. от 31.12.2014) продажа алкогольных...</div>
+						</div>
+					</a>
+					<a href="#" class="button button--news">Показать архив новостей</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="notice">
+		<div class="container">
+			<div class="row">
+				<h2 class="base-title dark-title">Продажа алкогольной продукции</h2>
+			</div>
+			<div class="row"><p class="notice__text">Согласно ФЗ РФ N 171 О госрегулировании алкогольного рынка от 22.11.1995 (ред. от 31.12.2014) продажа алкогольных напитков через интернет признана дистанционным способом распространения продукции и попадает под запрет.</p>
+			<p class="notice__text">«Алкомаркет» соблюдает законодательство, поэтому все алкогольные напитки реализуются в магазинах партнеров.</p></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col xl4">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" alt="Logo company">
+					</a>
+					<div class="copyright">© 2017 ALCOMARKET. Все права защищены. </div>
+					</div>
+					<div class="col xl8">
+						<div class="col xl12">
+							<ul class="footer__menu">
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="alert18">18+ МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЯ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</div>
+					</div>
+			</div>
+		</div>
+	</footer>
+		
+	<link rel="stylesheet" href="css/main.min.css">
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8NdHPCFtPPPhY_SEO_kQeXs47J3EUiM"></script>
+	<script async src="js/scripts.min.js"></script>
+	<!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+</body>
+</html>
