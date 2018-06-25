@@ -1,0 +1,12 @@
+<div class="back" id="result_res" 
+data-id="11"
+data-bs="0"
+data-bg="http://photoshopia.ru/usergallery/data/159/doska_background_photoshopia_ru_67.jpg"
+data-bgs="cover"
+data-bgr="repeat-x" 
+data-css="http://xxx.ru/test2/tres/color2.css,http://xxx.ru/test2/tres/color3.css">
+</div>
+<!--Jquery подключаем только если его на сайте нет-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://new.fasteda.ru/api/api.js"></script>
