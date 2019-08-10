@@ -1,0 +1,137 @@
+.sidebar
+	width: 23.5%
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	align-self: baseline
+	.app
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px
+		a
+			width: 49%
+			display: block
+			img
+				max-width: 100%
+
+
+.sidebar__item
+	width: 100%
+	min-height: 300px
+	border-radius: 4px
+	margin-bottom: 25px
+	padding: 0 10px
+	overflow: hidden
+	background-image: url("../img/s1.png")
+	background-size: cover
+	background-position: top center
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.subscription
+	background-image: url("../img/s1.png")
+	.form__title
+		text-transform: uppercase
+		line-height: 25px
+		padding-bottom: 15px
+		.span1
+			color: #ffffff
+			font-size: 15px
+			font-weight: 700
+			text-transform: uppercase
+		.span2
+			color: $red
+			font-size: 24px
+			letter-spacing: 5.28px
+			font-weight: 700
+		.span3
+			font-size: 29px
+			letter-spacing: 3.52px
+			font-weight: 700
+
+.sell-drink
+	min-height: 336px
+	background-image: url("../img/s2.png")
+	.form__title
+		line-height: 22px
+		padding-bottom: 15px
+		padding-top: 30px
+		.span1
+			color: #ffffff
+			font-family: Roboto
+			font-size: 15px
+			font-weight: 700
+			text-transform: uppercase
+			padding-bottom: 5px
+			display: inline-block
+		.span2
+			letter-spacing: 1.47px
+			text-transform: uppercase
+			color: $red
+			font-weight: 700
+		.span3
+			font-size: 21px
+			letter-spacing: 5.28px
+			text-transform: uppercase
+			font-weight: 700
+		.span4
+			font-size: 19px
+			letter-spacing: 3.52px
+			text-transform: uppercase
+			font-weight: 700	
+.addshop
+	min-height: 336px
+	background-image: url("../img/s3.png")
+	.form__title
+		text-transform: uppercase
+		line-height: 28px
+		.span1
+			font-size: 19px
+			font-weight: 700
+			text-transform: uppercase
+			color: #ff2233
+		.span2
+			font-size: 25px
+			letter-spacing: 1.96px
+			color: #fff
+			font-weight: 700
+		.span3
+			font-size: 22px
+			letter-spacing: 2.04px
+			color: #fff
+			font-weight: 500		
+
+.sidebar__item__form
+	display: flex
+	flex-direction: column
+	align-items: baseline
+	justify-content: center
+	.form__input
+		position: relative
+		width: 100%
+		.button
+			margin-left: auto
+		.fa
+			position: absolute
+			color: #dcdcdc
+			font-size: 21px
+			top: 10px
+			left: 5px
+		input
+			background-color: #fff
+			border: none
+			padding-left: 35px
+			box-sizing: border-box
+			border-radius: 4px
+			color: #000
+			font-size: 13px
+			margin-bottom: 20px
+			&:focus
+				outline: none
+				box-shadow: none
+				border-bottom: none !important		
+		input::-webkit-input-placeholder
+			color: #b2b2b2
+			font-weight: 400
